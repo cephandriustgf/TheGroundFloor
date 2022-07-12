@@ -136,7 +136,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Cephandrius - <a href = "mailto: cephandrius.tgf@gmail.com">Email</a>
+Cephandrius - <a href = "mailto: cephandriustgf@gmail.com">Email</a>
 
 Project Link: [https://github.com/cephandriustgf/TheGroundFloor](https://github.com/cephandriustgf/TheGroundFloor)
 
