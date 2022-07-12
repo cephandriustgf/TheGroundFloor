@@ -838,7 +838,7 @@ def friendreq(username):
     
     # If no requests, print message
     if friendrequests == None or friendrequests == "":
-        print("No friend requests (shocker)")
+        print("No friend requests")
         while True:
             choice = input("Hit any key to return to menu\n")
             clear()
