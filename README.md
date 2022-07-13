@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/cephandriustgf/TheGroundFloor">
+  <a href="https://github.com/pratyushvshah/TheGroundFoor">
     <img src="logo.ico" alt="Logo" width="80" height="80">
   </a>
 
@@ -33,7 +33,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#roadmap">TODO</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#disclaimer">Disclaimer</a></li>
     <li><a href="#license">License</a></li>
@@ -70,8 +70,16 @@ This project is aimed towards creating a fast, secure, lightweight CLI for texti
 
 1. Use the `log.sql` file in the directory get the commands through which you can create your own database.
 1. You can host the database on a platform like [bit.io](https://bit.io/).
-1. After hosting the database, update the connection url in the `main.py` file on line 15.
-1. Update your secret keys on lines 20 - 22. The "encryptkey" and "iv" keys are used to encrypt and decrypt the messages and MUST be 16 bytes long.
+1. After hosting the database, Make a `filekeys.py` file in the directory and add the following lines:
+
+```python
+postgresqllink = "<YOUR POSTGRESQL DATABASE LINK>"
+referralkey = "<YOUR REFERRAL KEY>"
+encryptkey =  b"<YOUR ENCRYPTION KEY>"
+iv = b"<YOUR IV KEY>"
+```
+
+4. The "encryptkey" and "iv" keys are used to encrypt and decrypt the messages and MUST be 16 bytes long.
 1. Voila! You can now text your friends using this CLI. Just send the `main.py` file to your friends or you can convert it to a `.exe` file and send it as an application!
 
 ### Prerequisites
@@ -91,15 +99,14 @@ There's no instructions, just run `main.py` in your terminal and follow the inst
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
-## Roadmap
+## TODO
 
 - [ ] Remember the user so they don't have to log in again (after converting `main.py` to an .exe file)
 - [ ] Allow sending images, videos, and audio files to your friends.
-- [ ] Add an error log
 - [ ] Make the UI more friendly and add color.
 - [ ] Add a way to send messages to a group.
 
-See the [open issues](https://github.com/cephandriustgf/TheGroundFloor/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/pratyushvshah/TheGroundFoor/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
